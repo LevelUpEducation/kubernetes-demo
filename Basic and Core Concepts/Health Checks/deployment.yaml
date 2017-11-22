@@ -18,13 +18,15 @@ spec:
         ports:
         - containerPort: 8080
         livenessProbe:
-          path: /
-          port: 8080
+          httpGet:
+            path: /
+            port: 8080
           initialDelaySeconds: 30
           periodSeconds: 30
         readinessProbe:
-          path: /
-          port: 8080
+          httpGet:
+            path: /
+            port: 8080
           initialDelaySeconds: 15
           periodSeconds: 3
 
