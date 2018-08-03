@@ -50,7 +50,7 @@ spec:
         env:
         - name: WORDPRESS_DB_HOST
           value: wordpress-mysql
-        - name: MYSQL_ROOT_PASSWORD
+        - name: WORDPRESS_DB_PASSWORD
           value: PASSWORDS_IN_PLAIN_TEXT_ARE_BAD_WE_WILL_SHOW_SOMETHING_MORE_SECURE_LATER
         ports:
         - containerPort: 80
